@@ -19,7 +19,7 @@ import {
 } from 'react-native';
 
 import {Colors, Header} from 'react-native/Libraries/NewAppScreen';
-import RTNCalculator from 'rtn-calculator/js/NativeCalculator.js';
+import RTNCalculator from 'rtn-calculator/js/NativeCalculator';
 
 function App(): JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -46,7 +46,8 @@ function App(): JSX.Element {
           <Button
             title="Compute"
             onPress={async () => {
-              const value = await RTNCalculator?.add(3, 7);
+              const value = await RTNCalculator.add(3, 7);
+              console.log(value);
               setResult(value ?? 0);
             }}
           />

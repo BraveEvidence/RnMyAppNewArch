@@ -1,0 +1,3 @@
+yarn add ./RTNCalculator
+
+yarn react-native run-android --active-arch-only
