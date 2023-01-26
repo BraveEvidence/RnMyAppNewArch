@@ -1,3 +1,3 @@
 yarn add ./RTNCalculator
-
+./gradlew generateCodegenArtifactsFromSchema
 yarn react-native run-android --active-arch-only
